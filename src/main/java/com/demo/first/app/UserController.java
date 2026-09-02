@@ -26,6 +26,9 @@ public class UserController {
         return "update success";
     }
 
+
+
+    
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable("id") int id){
         userDb.remove(id);
