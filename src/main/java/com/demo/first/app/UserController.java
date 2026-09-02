@@ -16,7 +16,15 @@ public class UserController {
 
     @PostMapping
     public String createUser(@RequestBody User user){
-        userDb.put(user.getId(), user);
+        System.out.println(user.getEmail());
+        userDb.putIfAbsent(user.getId(), user);
         return "User Created!";
+    }
+
+    public String updateUser(@RequestBody User user){
+        if (userDb.containsKey(user.getId())){
+            userDb.put(user.getId(), user);
+        }
+        return "update success";
     }
 }
