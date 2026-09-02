@@ -1,12 +1,12 @@
 package com.demo.first.app;
 
 public class User {
-    private int Id;
+    private int id;
     private String name;
     private String email;
 
     public User(int id, String name, String email) {
-        Id = id;
+        id = id;
         this.name = name;
         this.email = email;
     }
@@ -16,7 +16,7 @@ public class User {
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public String getName() {
@@ -28,7 +28,7 @@ public class User {
     }
 
     public void setId(int id) {
-        Id = id;
+        id = id;
     }
 
     public void setName(String name) {
