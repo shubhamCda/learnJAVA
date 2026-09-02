@@ -11,6 +11,10 @@ public class User {
         this.email = email;
     }
 
+    // Default constructor
+    public User() {
+    }
+
     public int getId() {
         return Id;
     }
@@ -21,5 +25,17 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+    public void setId(int id) {
+        Id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
